@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+/*----------------- MEDIA QUERIES ------------------*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Nunito+Sans:wght@200;300;500;700;1000&family=Roboto:wght@300;500;700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(202, 197, 197);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  padding-bottom: 3vh;
+  font-size: 5vh;
+}
+
+input, button  {
+  padding: 1.5vh;
+  font-size: 3vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.error-msg, .loading-msg, .aut-msg, .default-msg {
+  padding-bottom: 2vh;
+  font-size: 2.5vh;
+}
+
+.error-msg {
+  color: red;
+}
+
+.aut-msg {
+  color: green;
+}
+
+.btn {
+  margin: 0.5vh;
+  cursor: pointer;
+}
+
+/*========== BIG NOTEBOOKS ===========*/
+@media screen and (max-width: 1300px) and (orientation: landscape) {
+    
+
+}
+
+
+/*========== SMALL NOTEBOOKS ===========*/
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+
+
+}
+
+
+
+/*========== BIG TABLETS ===========*/
+@media screen and (max-width: 1400px) and (orientation: portrait) {
+
+
+
+}
+
+/*========== SMALL TABLETS ===========*/
+@media screen and (max-width: 820px)and (orientation: portrait) {
+    
+
+
+}
+
+/*========== SMARTPHONES ===========*/
+@media screen and (max-width: 420px) and (orientation: portrait) {
+
+
+
 }
